@@ -1,6 +1,6 @@
-# 🏀 Estructuras Condicionales en Python
+# 🏀 Estructura Condicionale IF-ELIF-ELSE en Python
 
-Una colección de ejercicios prácticos para aprender y dominar las estructuras de control condicionales en Python.
+Primer ejercicio de la cátedra.
 
 ## 📋 Contenido
 
@@ -8,12 +8,11 @@ Una colección de ejercicios prácticos para aprender y dominar las estructuras 
 - `if` simple
 - `if-else` (condicional doble)
 - `if-elif-else` (condicional múltiple)
-- `match-case` (selección múltiple)
 - Operadores de comparación (`<`, `<=`, `>=`, `>`, `==`, `!=`)
 - Rangos de valores
 - Anidamiento de condicionales
 
-## 🎯 Ejercicios Incluidos
+## 🎯 Ejercicio Incluido:
 
 ### IF-ELSE-ELIF 1.py - Clasificador de Posiciones de Baloncesto
 Determina la posición de un jugador según su altura:
@@ -65,7 +64,7 @@ else:
 ## 🚀 Cómo Ejecutar
 
 1. Clona el repositorio
-2. Ejecuta cualquier archivo `.py`:
+2. Ejecuta IF-ELSE-ELIF 1 `.py`:
    ```bash
    python "IF-ELSE-ELIF 1.py"
    ```
@@ -82,7 +81,7 @@ Este proyecto sigue principios de programación algorítmica:
 
 ## 🎓 Objetivos de Aprendizaje
 
-Al completar estos ejercicios, habrás aprendido:
+Al completar este ejercicio, aprendí a:
 - ✅ Implementar decisiones lógicas en código
 - ✅ Usar operadores de comparación efectivamente  
 - ✅ Estructurar condicionales múltiples
