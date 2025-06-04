@@ -115,8 +115,8 @@ Determina disponibilidad de viajes según estación del año:
 ## 💡 Habilidades Desarrolladas
 
 ### Técnicas de Programación
-- ✅ **Control de flujo avanzado** con estructuras condicionales complejas
-- ✅ **Validación robusta de datos** de entrada del usuario
+- ✅ **Control de flujo ** con estructuras condicionales
+- ✅ **Validación de datos simple** de tipo entrada
 - ✅ **Diseño de algoritmos** para resolver problemas del mundo real
 - ✅ **Optimización de código** usando `match-case` vs `if-elif`
 
@@ -129,7 +129,7 @@ Determina disponibilidad de viajes según estación del año:
 ### Resolución de Problemas
 - ✅ **Análisis de requerimientos** complejos (sistema de facturación)
 - ✅ **Modelado de lógica de negocio** real
-- ✅ **Implementación de cálculos financieros** precisos
+- ✅ **Implementación de cálculos** precisos
 - ✅ **Diseño de interfaces de usuario** por consola
 
 ## 🔧 Cómo Ejecutar
