@@ -1,4 +1,4 @@
-# 🏀 Estructura Condicionale IF-ELIF-ELSE en Python
+# 🏀 Estructura Condicional IF-ELIF-ELSE en Python
 
 Primer ejercicio de la cátedra.
 
