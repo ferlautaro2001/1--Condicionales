@@ -1,100 +1,190 @@
-# 🏀 Estructura Condicional IF-ELIF-ELSE en Python
+# 📚 Guía 1: Estructuras Condicionales en Python
 
-Primer ejercicio de la cátedra.
+## 🎯 Descripción del Proyecto
 
-## 📋 Contenido
+Este repositorio contiene los ejercicios desarrollados para la **Guía 1 de Programación I** en la Universidad Tecnológica Nacional (UTN). Los ejercicios se enfocan en el dominio de estructuras condicionales, validación de datos y lógica de control de flujo en Python.
 
-### Conceptos Cubiertos
-- `if` simple
-- `if-else` (condicional doble)
-- `if-elif-else` (condicional múltiple)
-- Operadores de comparación (`<`, `<=`, `>=`, `>`, `==`, `!=`)
-- Rangos de valores
-- Anidamiento de condicionales
+## 🚀 Tecnologías Utilizadas
 
-## 🎯 Ejercicio Incluido:
+- **Python 3.10**
+- Estructuras condicionales (`if`, `elif`, `else`)
+- Sentencias `match-case` (Python 3.10+)
+- Operadores lógicos y de comparación
+- Funciones de entrada/salida (`input()`, `print()`)
+- Formateo de strings y manejo de tipos de datos
 
-### IF-ELSE-ELIF 1.py - Clasificador de Posiciones de Baloncesto
-Determina la posición de un jugador según su altura:
+## 📁 Estructura del Proyecto
 
-```python
-# Clasificación por altura
-Menos de 160 cm     → Base
-160 - 179 cm        → Escolta  
-180 - 199 cm        → Alero
-200 cm o más        → Pivot
+```
+├── Gotita.py              # Sistema de facturación de servicios públicos
+├── IF-ELSE-ELIF 1.py      # Clasificador de posiciones en baloncesto
+├── IF-ELSE-ELIF 2.py      # Evaluador de calificaciones académicas
+├── Match.py               # Sistema de destinos turísticos por estación
+└── README.md              # Documentación del proyecto
 ```
 
-**Características del programa:**
-- Entrada: Altura en centímetros (float)
-- Salida: Posición en la cancha
-- Uso de rangos con operadores `<=` y `>=`
-- Estructura `if-elif-else` en cascada
+## 🔍 Ejercicios Desarrollados
 
-## 🔧 Conceptos Técnicos Aplicados
+### 1. **Sistema de Facturación de Servicios Públicos** (`Gotita.py`)
+**Complejidad:** ⭐⭐⭐⭐
 
-### Operadores de Comparación
-```python
-altura < 160                    # Menor que
-160 <= altura <= 179           # Rango inclusivo
-altura >= 200                  # Mayor o igual que
-```
+Sistema completo de facturación que calcula el costo de servicios públicos considerando:
+- **Tipos de cliente:** Residencial, Comercial, Industrial
+- **Tarifas diferenciadas:** Cargo fijo + consumo variable
+- **Bonificaciones y recargos** según rangos de consumo
+- **Descuentos especiales** para clientes residenciales
+- **Cálculo de IVA** y generación de factura detallada
 
-### Estructura Condicional Múltiple
-```python
-if condicion1:
-    # Acción 1
-elif condicion2:
-    # Acción 2  
-elif condicion3:
-    # Acción 3
-else:
-    # Acción por defecto
-```
+**Conceptos aplicados:**
+- Estructuras `match-case` anidadas
+- Validación de entrada de datos
+- Cálculos financieros complejos
+- Formateo numérico profesional
 
-## 🎲 Casos de Prueba
+| Tipo Cliente | Consumo (m³) | Bonificación/Recargo | Ejemplo Cálculo |
+|--------------|--------------|---------------------|-----------------|
+| Residencial  | 25           | 10% bonificación    | $5,000 → $4,500 |
+| Comercial    | 400          | 12% bonificación    | $80,000 → $70,400 |
+| Industrial   | 100          | 10% recargo         | $20,000 → $22,000 |
+| Residencial  | 15 (factura <$35k) | 5% desc. especial | + descuento adicional |
+
+### 2. **Clasificador de Posiciones en Baloncesto** (`IF-ELSE-ELIF 1.py`)
+**Complejidad:** ⭐⭐
+
+Determina la posición de un jugador basándose en su altura:
+- Base: < 160 cm
+- Escolta: 160-179 cm  
+- Alero: 180-199 cm
+- Pivot: ≥ 200 cm
+
+**Conceptos aplicados:**
+- Cadenas de `if-elif-else`
+- Operadores de comparación
+- Rangos numéricos
 
 | Altura (cm) | Posición Esperada |
 |-------------|-------------------|
-| 150         | Base             |
-| 165         | Escolta          |
-| 185         | Alero            |
-| 210         | Pivot            |
+| 150         | Base              |
+| 165         | Escolta           |
+| 185         | Alero             |
+| 210         | Pivot             |
 
-## 🚀 Cómo Ejecutar
+### 3. **Evaluador de Calificaciones Académicas** (`IF-ELSE-ELIF 2.py`)
+**Complejidad:** ⭐⭐
 
-1. Clona el repositorio
-2. Ejecuta IF-ELSE-ELIF 1 `.py`:
-   ```bash
-   python "IF-ELSE-ELIF 1.py"
-   ```
-3. Ingresa la altura cuando se solicite
-4. Observa la clasificación resultado
+Sistema de evaluación académica que clasifica notas del 1-10:
+- Promoción directa: 6-10
+- Aprobado: 4-5
+- Desaprobado: 1-3
 
-## 📚 Fundamentos de Programación
+**Conceptos aplicados:**
+- Validación de rangos
+- Lógica condicional simple
+- Manejo de casos edge
 
-Este proyecto sigue principios de programación algorítmica:
-- **Entrada-Proceso-Salida**: Estructura clara del algoritmo
-- **Validación implícita**: Manejo de rangos numéricos
-- **Legibilidad**: Código claro y bien estructurado
-- **Casos exhaustivos**: Cobertura completa de rangos
+| Nota | Resultado |
+|------|-----------|
+| 9    | Promoción directa |
+| 4    | Aprobado |
+| 2    | Desaprobado |
+| 11   | Monto inválido |
 
-## 🎓 Objetivos de Aprendizaje
+### 4. **Sistema de Destinos Turísticos** (`Match.py`)
+**Complejidad:** ⭐⭐⭐
 
-Al completar este ejercicio, aprendí a:
-- ✅ Implementar decisiones lógicas en código
-- ✅ Usar operadores de comparación efectivamente  
-- ✅ Estructurar condicionales múltiples
-- ✅ Manejar rangos numéricos
-- ✅ Crear programas interactivos con entrada de usuario
+Determina disponibilidad de viajes según estación del año:
+- **Invierno:** Solo Bariloche
+- **Verano:** Mar del Plata y Cataratas
+- **Otoño:** Todos los destinos
+- **Primavera:** Todos excepto Bariloche
 
-## 🔗 Conceptos Relacionados
+**Conceptos aplicados:**
+- Sentencias `match-case`
+- Lógica booleana compleja
+- Procesamiento de strings
+- Manejo de múltiples condiciones
 
-- Variables y tipos de datos (float, string)
-- Entrada y salida por consola (`input()`, `print()`)
-- Casting de tipos (`float()`)
-- Operadores lógicos y relacionales
+| Estación | Destino | ¿Se viaja? |
+|----------|---------|------------|
+| Invierno | Bariloche | ✅ Sí |
+| Invierno | Cataratas | ❌ No |
+| Verano | Mar del Plata | ✅ Sí |
+| Otoño | Cualquiera | ✅ Sí |
+| Primavera | Bariloche | ❌ No |
+
+## 💡 Habilidades Desarrolladas
+
+### Técnicas de Programación
+- ✅ **Control de flujo avanzado** con estructuras condicionales complejas
+- ✅ **Validación robusta de datos** de entrada del usuario
+- ✅ **Diseño de algoritmos** para resolver problemas del mundo real
+- ✅ **Optimización de código** usando `match-case` vs `if-elif`
+
+### Buenas Prácticas
+- ✅ **Nomenclatura clara** y descriptiva de variables
+- ✅ **Comentarios explicativos** para lógica compleja
+- ✅ **Formateo consistente** del código
+- ✅ **Manejo de casos especiales** y validaciones
+
+### Resolución de Problemas
+- ✅ **Análisis de requerimientos** complejos (sistema de facturación)
+- ✅ **Modelado de lógica de negocio** real
+- ✅ **Implementación de cálculos financieros** precisos
+- ✅ **Diseño de interfaces de usuario** por consola
+
+## 🔧 Cómo Ejecutar
+
+1. **Clonar el repositorio:**
+```bash
+git clone https://github.com/tu-usuario/programacion1-condicionales
+cd programacion1-condicionales
+```
+
+2. **Ejecutar cualquier ejercicio:**
+```bash
+python Gotita.py
+python IF-ELSE-ELIF 1.py
+python IF-ELSE-ELIF 2.py
+python Match.py
+```
+
+## 📊 Casos de Prueba Sugeridos
+
+### Para `Gotita.py`:
+- Cliente residencial, 25 m³ (debe aplicar bonificación)
+- Cliente comercial, 400 m³ (debe aplicar bonificación del 12%)
+- Cliente industrial, 100 m³ (debe aplicar recargo del 10%)
+
+| Escenario | Entrada | Resultado Esperado |
+|-----------|---------|-------------------|
+| Residencial bajo consumo | 25 m³ | Bonificación 10% |
+| Comercial alto consumo | 400 m³ | Bonificación 12% |
+| Industrial medio consumo | 100 m³ | Recargo 10% |
+| Residencial con desc. especial | 15 m³ | Bonificación + 5% adicional |
+
+### Para otros ejercicios:
+- Valores límite de cada rango
+- Casos fuera de rango para validar robustez
+
+| Ejercicio | Caso Límite | Entrada | Salida Esperada |
+|-----------|-------------|---------|-----------------|
+| Baloncesto | Límite Base-Escolta | 160 cm | Escolta |
+| Calificaciones | Límite Aprobado-Promoción | 6 | Promoción directa |
+| Turismo | Destino inexistente | "París" | Manejo de error |
+
+## 🎓 Aprendizajes Clave
+
+En esta guía aprendí a:
+- **Traducir problemas complejos** del mundo real a código funcional.
+- **Implementar lógica** con múltiples variables y condiciones.
+- **Crear sistemas básicos** con validación de entradas simples.
+- **Comentar y estructurar código** de manera prolija.
+
+## 👨‍💻 Autor
+
+**Lautaro Fernandez**  
+Estudiante de Programación 1 - Universidad Tecnológica Nacional  
 
 ---
 
-*Ejercicio desarrollado por Lautaro Fernandez como parte del aprendizaje de Programación I - Estructuras de Control.*
+*Desarrollado como parte de la cátedra de Programación 1 en UTN - Abril 2025*
