@@ -137,7 +137,6 @@ Determina disponibilidad de viajes según estación del año:
 1. **Clonar el repositorio:**
 ```bash
 git clone https://github.com/ferlautaro2001/1--Condicionales.git
-cd programacion1-condicionales
 ```
 
 2. **Ejecutar cualquier ejercicio:**
